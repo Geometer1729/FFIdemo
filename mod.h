@@ -22,16 +22,4 @@ int ruinPi(){
   return 1;
 };
 
-
-
-
-
-
-
-
-
-
-
-
-
 #endif

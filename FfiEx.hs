@@ -13,7 +13,6 @@ foreign import capi "mod.h BadSayHi" badSayHi2 :: IO ()
 foreign import capi "mod.h pi" pi :: Double
 foreign import capi "mod.h ruinPi" ruinPi :: IO ()
 
-
 newLine::IO ()
 newLine = putStrLn ""
 
@@ -21,8 +20,6 @@ cFuncToHFunc:: IO Int -> IO ()
 cFuncToHFunc f = do
   x <- f
   if x==1 then return () else error "C function did not return 1"
-
-
 
 main::IO ()
 main = do
