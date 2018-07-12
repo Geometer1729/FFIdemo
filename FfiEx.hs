@@ -6,7 +6,7 @@ import           Foreign.Marshal.Array
 import           Foreign.Ptr           (Ptr, nullPtr)
 import           Prelude               hiding (pi)
 
-foreign import capi "mod.h SayHi" sayHi1 :: IO Int
+foreign import capi "mod.h SayHi" sayHi1 :: IO Int -- you can also use ccall instead of capi if it's a library function like sin
 foreign import capi "mod.h SayHi" sayHi2 :: IO ()
 foreign import capi "mod.h BadSayHi" badSayHi1 :: IO Int
 foreign import capi "mod.h BadSayHi" badSayHi2 :: IO ()
